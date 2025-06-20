@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context 
+           https://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/mvc 
+           https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<import resource="context-mybatis.xml" />
+	
+    <!-- 1. 컴포넌트 스캔 -->
+    <context:component-scan base-package="com.example.moviereviewsite" />
+    
+
+    <!-- 2. 어노테이션 기반 MVC 활성화 -->
+    <mvc:annotation-driven />
+
+    <!-- 3. ViewResolver 설정 (JSP 파일 위치) -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!-- 4. 정적 자원 매핑 (css, js, img 등) -->
+    <mvc:resources mapping="/static/**" location="/static/" />
+
+</beans>
