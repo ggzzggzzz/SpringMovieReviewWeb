@@ -6,7 +6,7 @@ Spring Framework 기반으로 개발된 영화 정보 제공 및 리뷰 커뮤�
 
 <br>
 
-> **[중요]** 아래 이미지를 프로젝트의 실제 동작 스크린샷으로 교체해주세요. (예: 메인 페이지, 영화 상세 페이지 등)
+ 프로젝트의 실제 동작 스크린샷
 
 ![Project Screenshot](./project_screenshot.png)
 
