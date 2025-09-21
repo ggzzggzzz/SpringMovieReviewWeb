@@ -133,7 +133,6 @@ DispatcherServlet (Spring Front Controller)
 
 ## 📄 데이터베이스 ERD
 
-> **[권장]** 아래 텍스트 설명을 ERD 이미지 파일로 대체하면 더 좋습니다. (예: `erd.png`)
 
 주요 테이블 간의 관계는 다음과 같습니다.
 
