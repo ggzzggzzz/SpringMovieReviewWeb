@@ -6,12 +6,6 @@ Spring Framework 기반으로 개발된 영화 정보 제공 및 리뷰 커뮤�
 
 <br>
 
- 프로젝트의 실제 동작 스크린샷
-
-![Project Screenshot](./project_screenshot.png)
-
-<br>
-
 ## ✨ 주요 기능
 
 -   **사용자 관리**:
